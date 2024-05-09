@@ -19,7 +19,18 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     implementation 'de.bwaldvogel:mongo-java-server:1.44.0'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '8.0.1.Final'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.5.0'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.14.0'
+	implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+	   
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+	annotationProcessor 'org.projectlombok:lombok:1.18.32'
+	
+	testCompileOnly 'org.projectlombok:lombok:1.18.32'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+    
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.11.0'
     testImplementation 'junit:junit:4.13.1'
 }
