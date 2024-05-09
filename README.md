@@ -1,3 +1,11 @@
+# Changes
+Swagger UI can be found at http://localhost:8080/swagger-ui/index.html
+Functional test expanded to include challenges
+Mockito test added for base functionality and challenges
+Services changed to respond with generic ResponseEntity to allow for JSON response along with text response for errors.
+
+
+
 # Coding Challenge
 ## What's Provided
 A simple [Spring Boot](https://projects.spring.io/spring-boot/) web application has been created and bootstrapped with data. The application contains 
